@@ -2,12 +2,11 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import Rabbit from "../../Assets/Projects/rabbit.png";
+import Trex from "../../Assets/Projects/trex.jpg";
+import ISS from "../../Assets/Projects/iss_icon.png";
+import avatar from "../../Assets/Projects/avatar.png";
+import TextToSpeech from "../../Assets/Projects/text to speech.png";
 
 function Projects() {
   return (
@@ -23,68 +22,53 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={avatar}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Health Monitoring App"
+              description="Empowers users to track essential health metrics such as sleep patterns, exercise routines, and other key data points, providing personalized insights to optimize habits and achieve wellness goals."
+              ghLink="https://github.com/Kulbhushan01/Health-Monitoring-App"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={ISS}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="ISS Tracker"
+              description="ISS-Tracker: A feature-rich application that provides real-time tracking of the International Space Station (ISS), complete with detailed information on its location, trajectory, and visible passes. Explore celestial wonders and track major meteor showers with ease"
+              ghLink="https://github.com/Kulbhushan01/ISS-Tracker"
+            />
+          </Col>         
+          
+          
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TextToSpeech}
+              isBlog={false}
+              title="Text To Speech Converter"
+              description="A tool that converts written text into spoken audio, providing accessibility and convenience"
+              ghLink="https://github.com/Kulbhushan01/text-to-speech-converter"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={Rabbit}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Rabbit Feeding Game"
+              description="Rabbit-Feeding-Game: Enjoy a delightful experience where players feed virtual rabbits, nurturing them with care and attention."
+              ghLink="https://github.com/Kulbhushan01/Rabbit-Feeding-Game"
+              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={Trex}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Trex Game"
+              description="An engaging T-Rex game inspired by the classic Chrome browser experience, designed for endless fun and enjoyment."
+              ghLink="https://github.com/Kulbhushan01/Trex-Game"
             />
           </Col>
         </Row>

@@ -9,9 +9,9 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Kulbhushan Gore </span>
-            from <span className="purple"> Aurangabad MH, India.</span>
+            from <span className="purple"> Chhatrapati Sambhaji Nagar MH, India.</span>
             <br />
-            I am currently pursuing my 12th standard at SBES College.
+            I am currently pursuing my BCA cyber Security Degree at NSBT.
             <br />         
             
             <br />
